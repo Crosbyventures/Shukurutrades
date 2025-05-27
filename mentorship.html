@@ -7,7 +7,17 @@
     <style>
         body { font-family: Arial, sans-serif; background: #111; color: #fff; margin: 0; padding: 20px; }
         .container { max-width: 900px; margin: auto; background: #1c1c1c; padding: 30px; border-radius: 12px; box-shadow: 0 0 10px #000; }
-        .cover { width: 100%; max-width: 450px; display: block; margin: 0 auto 25px; border-radius: 12px; box-shadow: 0 0 12px #000; }
+        .cover {
+            width: 90%;
+            max-width: 320px;
+            height: auto;
+            display: block;
+            margin: 0 auto 25px;
+            border-radius: 12px;
+            box-shadow: 0 0 12px #000;
+            transition: transform 0.2s ease;
+        }
+        .cover:hover { transform: scale(1.03); }
         h1 { text-align: center; color: #00ff99; font-size: 34px; margin-bottom: 25px; }
         p { font-size: 17px; line-height: 1.6; }
         .btn { display: block; width: 100%; background: #00c853; color: white; text-align: center; padding: 16px; font-weight: bold; text-decoration: none; border-radius: 8px; margin: 25px 0; font-size: 18px; }
@@ -18,7 +28,9 @@
 <body>
     <div class="container">
         <h1>Crypto Mentorship Course</h1>
-        <img src="assets/crypto-sniper-cover.jpg" alt="Crypto Sniper Academy Book" class="cover">
+        <a href="https://cash.app/$crosbyventuresllc" target="_blank">
+            <img src="assets/crypto-sniper-cover.jpg" alt="Crypto Sniper Academy Book" class="cover">
+        </a>
         <p><strong>Ready to trade like a sniper?</strong> The Crypto Sniper Academy is a 66-page PDF course built to help you master the markets with precision, strategy, and discipline. Perfect for beginners or traders tired of losing money without a plan.</p>
 
         <p>You’ll learn everything from chart setups and sniper entries to trading psychology, risk management, and scaling small accounts. Includes bonus tools like a trading journal, sniper checklist, and planner.</p>
