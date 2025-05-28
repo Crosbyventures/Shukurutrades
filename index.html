@@ -1,79 +1,59 @@
 
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="google-site-verification" content="google363ca09dc352a84e" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <meta name="google-site-verification" content="gPWG7MjVoWQrriCpv-fHSpoaTdTsp_i9eidfBVPfmH4" />
-  <title>Shukuru Trades</title>
-  <style>
-    body { font-family: Arial, sans-serif; margin: 0; background: #f4f4f4; }
-    header { background: #1a1a1a; padding: 20px; text-align: center; color: white; }
-    nav a { color: white; text-decoration: none; margin: 0 15px; font-weight: bold; }
-    .hero { background: #007bff; color: white; padding: 60px 20px; text-align: center; }
-    .services, .contact { padding: 40px 20px; text-align: center; }
-    .card-container { display: flex; justify-content: center; flex-wrap: wrap; }
-    .card { background: white; margin: 15px; padding: 20px; border-radius: 8px; width: 280px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
-    footer { background: #1a1a1a; color: white; text-align: center; padding: 20px 10px; font-size: 14px; }
-    a.button { display: inline-block; background-color: #007bff; color: white; padding: 12px 20px; text-decoration: none; border-radius: 5px; margin-top: 15px; }
-    .contact p img { vertical-align: middle; margin-right: 8px; }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shukuru Trades</title>
+    <style>
+        body { margin: 0; font-family: Arial, sans-serif; background: #f4f4f4; }
+        header { background: #000; padding: 20px; color: white; display: flex; justify-content: center; }
+        nav a { margin: 0 15px; color: white; text-decoration: none; font-weight: bold; }
+        .hero { background: #007bff; color: white; padding: 60px 20px; text-align: center; }
+        .services, .product { padding: 40px 20px; text-align: center; }
+        .product { background: #ffffff; }
+        .book-img { max-width: 300px; width: 90%; height: auto; border-radius: 10px; cursor: pointer; }
+        .buy-btn { margin-top: 20px; background: #f7931a; color: white; padding: 15px 30px; border: none; font-size: 18px; border-radius: 5px; cursor: pointer; text-decoration: none; display: inline-block; }
+        .description { margin-top: 20px; font-size: 18px; max-width: 600px; margin-left: auto; margin-right: auto; }
+        footer { background: #222; color: #fff; text-align: center; padding: 20px; }
+    </style>
 </head>
 <body>
-  <header>
-    <nav>
-      <a href="#">Home</a>
-      <a href="#services">Services</a>
-      <a href="#contact">Contact</a>
-    </nav>
-  </header>
+    <header>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Services</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
 
-
-  <section class="hero">
-    <h1>Welcome to Shukuru Trades</h1>
-    <p>Trading insights. Digital skills. Real results.</p>
-    <a href="#contact" class="button">Join Our Community</a>
-  </section>
-
-
-  <section class="services" id="services">
-    <h2>Our Services</h2>
-    <a href="academy.html" style="text-decoration: none; color: inherit;">
-<div class="card" style="cursor: pointer;">
-<h3>Crypto Mentorship</h3>
-<p>Personalized training and trading strategies tailored to your goals.</p>
-</div>
-</a>
-      <div class="card">
-        <h3>Volume Spike Alerts</h3>
-        <p>Stay ahead with automated alerts for potential breakout trades.</p>
-      </div>
-      <div class="card">
-        <h3>Learning Resources</h3>
-        <p>Access exclusive materials to sharpen your crypto knowledge.</p>
-      </div>
+    <div class="hero">
+        <h1>Welcome to Shukuru Trades</h1>
+        <p>Trading insights. Digital skills. Real results.</p>
+        <p><strong>Join Our Community</strong></p>
     </div>
-  </section>
 
+    <div class="services">
+        <h2>Our Services</h2>
+        <p>We offer crypto trading education, mentorship, and tools to grow your trading business.</p>
+    </div>
 
-  <section class="contact" id="contact">
-    <h2>Contact Us</h2>
-    <p><img src="https://img.icons8.com/ios-filled/20/000000/new-post.png"/> 
-       <strong>Email:</strong> <a href="mailto:info@shukurutrades.com">info@shukurutrades.com</a></p>
-    <p><img src="https://img.icons8.com/ios-filled/20/25D366/whatsapp.png"/> 
-       <strong>WhatsApp:</strong> <a href="https://wa.me/16232191735" target="_blank">+1 (623) 219-1735</a></p>
-    <p><img src="https://img.icons8.com/ios-filled/20/0088cc/telegram-app.png"/> 
-       <strong>Telegram:</strong> <a href="https://t.me/ShukuruTrades" target="_blank">@ShukuruTrades</a></p>
-    <p><strong>Scan QR Code to Join on Telegram:</strong><br>
-       <img src="telegram_qr_shukurutrades.png" alt="Telegram QR" width="130">
-    </p>
-  </section>
+    <div class="product">
+        <h2>📘 Featured Product</h2>
+        <a href="https://crosbyventures.gumroad.com/l/tplkub" target="_blank">
+            <img src="crypto_sniper_book_cover.jpg" alt="Crypto Sniper Academy Book" class="book-img">
+        </a>
+        <p class="description">
+            <strong>Crypto Sniper Academy</strong><br>
+            Master the markets with this all-in-one crypto trading playbook.<br>
+            <strong>Price: $49</strong>
+        </p>
+        <a class="buy-btn" href="https://crosbyventures.gumroad.com/l/tplkub" target="_blank">Buy Now – Instant Download</a>
+        <p style="margin-top: 10px; color: #666;">Secure checkout powered by Gumroad</p>
+    </div>
 
-
-  <footer>
-    &copy; 2025 ShukuruTrades.com - All rights reserved.
-  </footer>
+    <footer>
+        <p>&copy; 2025 Shukuru Trades. All rights reserved.</p>
+    </footer>
 </body>
 </html>
