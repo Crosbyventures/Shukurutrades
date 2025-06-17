@@ -4,109 +4,62 @@
   <meta charset="UTF-8">
   <title>Donate | Crosby Ventures</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background-color: #f2f8ff;
-      margin: 0;
-      padding: 0;
-      color: #003366;
-    }
-    .container {
-      max-width: 700px;
-      margin: 50px auto;
-      background-color: #ffffff;
-      padding: 30px;
-      border-radius: 12px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
-      text-align: center;
-    }
-    h2 {
-      margin-bottom: 10px;
-      color: #003366;
-    }
-    p {
-      font-size: 16px;
-      margin-bottom: 15px;
-    }
-    .button {
-      background-color: #0070ba;
-      color: white;
-      border: none;
-      padding: 12px 24px;
-      font-size: 16px;
-      border-radius: 6px;
-      cursor: pointer;
-      margin-top: 10px;
-      text-decoration: none;
-    }
-    .note {
-      font-size: 12px;
-      color: #777;
-      margin-top: 30px;
-    }
-  </style>
-  <!-- 👇 Start: Fillable Donation Form Section -->
-<section style="padding: 40px 20px; background: #f9f9f9;">
-  <h2 style="text-align: center; color: #333;">📝 Fill Out the Donation Form</h2>
-  <p style="text-align: center; max-width: 700px; margin: 10px auto 30px;">
-    Complete the fillable form below and upload it to support Crosby Ventures. You may also download and return it via email.
+</head>
+<body>
+
+<!-- ✅ Donation Section -->
+<section style="padding: 40px 20px; background-color: #fff;">
+  <h2 style="text-align: center; color: #222;">💰 Support Crosby Ventures</h2>
+  <p style="text-align: center; max-width: 700px; margin: 10px auto;">
+    You can support our mission by sending your donation through one of the methods below.
   </p>
 
-  <!-- PDF Viewer -->
-  <div style="text-align: center;">
-    <object 
-      data="https://shukurutrades.com/assets/Crosby_Donation_Form.pdf" 
-      type="application/pdf" 
-      width="100%" 
-      height="700px" 
-      style="max-width: 860px; border: 1px solid #ccc;">
-        <p>📄 Your browser can’t display this form. 
-          <a href="https://shukurutrades.com/assets/Crosby_Donation_Form.pdf" download>
-            Click here to download it.
-          </a>
-        </p>
-    </object>
+  <div style="text-align: center; margin-top: 20px;">
+    <p><strong>CashApp:</strong> $crosbyventuresllc</p>
+    <p><strong>PayPal:</strong> info.crosbyventures@gmail.com</p>
+    <p><strong>Zelle:</strong> +1 (480) 912-9138</p>
   </div>
+</section>
 
-  <!-- Note -->
-  <p style="text-align: center; font-size: 14px; color: #555;">
-    📱 For best results, download and open the form using Adobe Acrobat or a mobile PDF reader.
+<!-- ✅ New Fillable Form Add-On -->
+<div style="padding: 40px 20px; background-color: #f9f9f9; margin-top: 50px;">
+  <h2 style="text-align: center; color: #222;">📄 Download & Submit Donation Form</h2>
+  <p style="text-align: center; max-width: 700px; margin: 10px auto 25px;">
+    Download the fillable PDF form below, complete it, and return it via upload or email.
   </p>
 
-  <!-- Download Button -->
-  <div style="text-align: center; margin-top: 30px;">
+  <div style="text-align: center; margin-bottom: 30px;">
     <a href="https://shukurutrades.com/assets/Crosby_Donation_Form.pdf" download>
-      <button style="padding: 10px 20px; background-color: #007BFF; color: white; border: none; border-radius: 5px;">
+      <button style="padding: 12px 24px; font-size: 16px; background-color: #007BFF; color: white; border: none; border-radius: 5px;">
         📥 Download Donation Form (PDF)
       </button>
     </a>
   </div>
 
-  <!-- Upload Form -->
-  <div style="text-align: center; margin-top: 40px;">
-    <h3>📤 Submit Your Completed Form</h3>
+  <div style="text-align: center;">
+    <h3>📤 Submit Completed Form</h3>
     <p>Email: <strong>info.crosbyventures@gmail.com</strong> or upload below:</p>
 
     <form 
       action="https://formsubmit.co/info.crosbyventures@gmail.com" 
       method="POST" 
-      enctype="multipart/form-data"
+      enctype="multipart/form-data" 
       style="margin-top: 20px;">
       
       <input type="file" name="attachment" required accept="application/pdf"
-             style="padding: 10px; margin-bottom: 15px;">
-      <br>
+             style="padding: 10px; margin-bottom: 15px;"><br>
+
       <input type="hidden" name="_subject" value="New Donation Form Submission">
       <input type="hidden" name="_captcha" value="false">
       <input type="hidden" name="_next" value="https://shukurutrades.com/thank-you.html">
+
       <button type="submit" 
-              style="padding: 10px 25px; background-color: #28a745; color: white; border: none; border-radius: 5px;">
-        Upload & Send
+              style="padding: 12px 24px; background-color: #28a745; color: white; border: none; border-radius: 5px;">
+        ✅ Upload & Send
       </button>
     </form>
   </div>
-</section>
-<!-- ☝️ End: Fillable Donation Form Section -->
-</head>
-<body>
+</div>
+
+</body>
+</html>
