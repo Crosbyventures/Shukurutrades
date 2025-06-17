@@ -46,56 +46,44 @@
       margin-top: 30px;
     }
   </style>
-</head>
-<body>
-
-  <div class="container">
-    <h2>Support Crosby Ventures LLC</h2>
-    <p>Your donation helps fund crypto mentorship, education, and digital empowerment in the community.</p>
-
-    <!-- PayPal Donate Button -->
-    <form action="https://www.paypal.com/donate" method="post" target="_blank">
-      <input type="hidden" name="business" value="info.crosbyventures@gmail.com" />
-      <input type="hidden" name="currency_code" value="USD" />
-      <input type="submit" value="Donate via PayPal" class="button" />
-    </form>
-
-    <!-- CashApp -->
-    <p><strong>CashApp:</strong> $crosbyventuresllc</p>
-
-    <!-- Zelle -->
-    <p><strong>Zelle:</strong> +1 (480) 912-9138</p>
-
-    <p class="note">*Crosby Ventures LLC is a for-profit business. Donations are not tax-deductible but support our mentorship, operations, and community initiatives.</p>
-  </div>
-
-</body>
-</html>
-<!-- 👇 Start: Fillable Donation Form Section -->
+  <!-- 👇 Start: Fillable Donation Form Section -->
 <section style="padding: 40px 20px; background: #f9f9f9;">
   <h2 style="text-align: center; color: #333;">📝 Fill Out the Donation Form</h2>
   <p style="text-align: center; max-width: 700px; margin: 10px auto 30px;">
     Complete the fillable form below and upload it to support Crosby Ventures. You may also download and return it via email.
   </p>
 
-  <div style="display: flex; justify-content: center;">
-    <iframe 
-      src="https://shukurutrades.com/assets/Crosby_Donation_Form.pdf"
+  <!-- PDF Viewer -->
+  <div style="text-align: center;">
+    <object 
+      data="https://shukurutrades.com/assets/Crosby_Donation_Form.pdf" 
+      type="application/pdf" 
       width="100%" 
       height="700px" 
-      style="border: 1px solid #ccc; max-width: 860px;">
-    </iframe>
+      style="max-width: 860px; border: 1px solid #ccc;">
+        <p>📄 Your browser can’t display this form. 
+          <a href="https://shukurutrades.com/assets/Crosby_Donation_Form.pdf" download>
+            Click here to download it.
+          </a>
+        </p>
+    </object>
   </div>
 
+  <!-- Note -->
+  <p style="text-align: center; font-size: 14px; color: #555;">
+    📱 For best results, download and open the form using Adobe Acrobat or a mobile PDF reader.
+  </p>
+
+  <!-- Download Button -->
   <div style="text-align: center; margin-top: 30px;">
-    <p>🔽 Prefer to download and fill later?</p>
     <a href="https://shukurutrades.com/assets/Crosby_Donation_Form.pdf" download>
       <button style="padding: 10px 20px; background-color: #007BFF; color: white; border: none; border-radius: 5px;">
-        Download Donation Form (PDF)
+        📥 Download Donation Form (PDF)
       </button>
     </a>
   </div>
 
+  <!-- Upload Form -->
   <div style="text-align: center; margin-top: 40px;">
     <h3>📤 Submit Your Completed Form</h3>
     <p>Email: <strong>info.crosbyventures@gmail.com</strong> or upload below:</p>
@@ -120,3 +108,5 @@
   </div>
 </section>
 <!-- ☝️ End: Fillable Donation Form Section -->
+</head>
+<body>
