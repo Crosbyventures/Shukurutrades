@@ -29,7 +29,7 @@
       font-size: 16px;
       margin-bottom: 15px;
     }
-    .button {
+    .button, button {
       background-color: #0070ba;
       color: white;
       border: none;
@@ -59,6 +59,14 @@
       height: auto;
       margin: 10px;
     }
+    input, textarea {
+      width: 90%;
+      padding: 10px;
+      margin: 8px 0;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+      font-size: 15px;
+    }
   </style>
 </head>
 <body>
@@ -76,19 +84,30 @@
 
     <div class="divider"></div>
 
+    <!-- CashApp and Zelle Info -->
     <div class="payment-info">
       <p><strong>CashApp:</strong> $crosbyventuresllc</p>
       <img src="https://chart.googleapis.com/chart?chs=150x150&cht=qr&chl=https://cash.app/$crosbyventuresllc" class="qr-img" alt="CashApp QR Code">
-
       <p><strong>Zelle:</strong> +1 (480) 912-9138</p>
     </div>
 
     <div class="divider"></div>
 
-    <!-- Buy Book + Mentorship Button -->
+    <!-- Book & Mentorship Button -->
     <h3>Buy Full Mentorship + Sniper Book</h3>
     <p>Get lifetime access, strategy book & Zoom support</p>
     <a href="https://www.paypal.com/paypalme/crosbyventuresllc/1500" target="_blank" class="button">Buy Now – $1,500</a>
+
+    <div class="divider"></div>
+
+    <!-- Donor Info Form -->
+    <h3>Send Your Info (Optional)</h3>
+    <form action="https://formspree.io/f/mayvklkj" method="POST">
+      <input type="text" name="name" placeholder="Your Name" required><br>
+      <input type="email" name="email" placeholder="Your Email" required><br>
+      <textarea name="message" placeholder="Message or reason for supporting" rows="4" required></textarea><br>
+      <button type="submit">Send to Crosby</button>
+    </form>
 
     <p class="note">*Crosby Ventures LLC is a for-profit business. Donations are not tax-deductible but support our mentorship, operations, and community initiatives.</p>
   </div>
