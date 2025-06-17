@@ -4,62 +4,94 @@
   <meta charset="UTF-8">
   <title>Donate | Crosby Ventures</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f2f8ff;
+      margin: 0;
+      padding: 0;
+      color: #003366;
+    }
+    .container {
+      max-width: 700px;
+      margin: 50px auto;
+      background-color: #ffffff;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+    h2 {
+      margin-bottom: 10px;
+      color: #003366;
+    }
+    p {
+      font-size: 16px;
+      margin-bottom: 15px;
+    }
+    .button {
+      background-color: #0070ba;
+      color: white;
+      border: none;
+      padding: 12px 24px;
+      font-size: 16px;
+      border-radius: 6px;
+      cursor: pointer;
+      margin-top: 10px;
+      text-decoration: none;
+    }
+    .note {
+      font-size: 12px;
+      color: #777;
+      margin-top: 30px;
+    }
+    .payment-info {
+      font-size: 16px;
+      margin-top: 10px;
+      line-height: 1.6;
+    }
+    .divider {
+      margin: 20px 0;
+      border-top: 1px solid #ccc;
+    }
+    .qr-img {
+      width: 120px;
+      height: auto;
+      margin: 10px;
+    }
+  </style>
 </head>
 <body>
 
-<!-- ✅ Donation Section -->
-<section style="padding: 40px 20px; background-color: #fff;">
-  <h2 style="text-align: center; color: #222;">💰 Support Crosby Ventures</h2>
-  <p style="text-align: center; max-width: 700px; margin: 10px auto;">
-    You can support our mission by sending your donation through one of the methods below.
-  </p>
+  <div class="container">
+    <h2>Support Crosby Ventures LLC</h2>
+    <p>Your donation helps fund crypto mentorship, education, and digital empowerment in the community.</p>
 
-  <div style="text-align: center; margin-top: 20px;">
-    <p><strong>CashApp:</strong> $crosbyventuresllc</p>
-    <p><strong>PayPal:</strong> info.crosbyventures@gmail.com</p>
-    <p><strong>Zelle:</strong> +1 (480) 912-9138</p>
-  </div>
-</section>
-
-<!-- ✅ New Fillable Form Add-On -->
-<div style="padding: 40px 20px; background-color: #f9f9f9; margin-top: 50px;">
-  <h2 style="text-align: center; color: #222;">📄 Download & Submit Donation Form</h2>
-  <p style="text-align: center; max-width: 700px; margin: 10px auto 25px;">
-    Download the fillable PDF form below, complete it, and return it via upload or email.
-  </p>
-
-  <div style="text-align: center; margin-bottom: 30px;">
-    <a href="https://shukurutrades.com/assets/Crosby_Donation_Form.pdf" download>
-      <button style="padding: 12px 24px; font-size: 16px; background-color: #007BFF; color: white; border: none; border-radius: 5px;">
-        📥 Download Donation Form (PDF)
-      </button>
-    </a>
-  </div>
-
-  <div style="text-align: center;">
-    <h3>📤 Submit Completed Form</h3>
-    <p>Email: <strong>info.crosbyventures@gmail.com</strong> or upload below:</p>
-
-    <form 
-      action="https://formsubmit.co/info.crosbyventures@gmail.com" 
-      method="POST" 
-      enctype="multipart/form-data" 
-      style="margin-top: 20px;">
-      
-      <input type="file" name="attachment" required accept="application/pdf"
-             style="padding: 10px; margin-bottom: 15px;"><br>
-
-      <input type="hidden" name="_subject" value="New Donation Form Submission">
-      <input type="hidden" name="_captcha" value="false">
-      <input type="hidden" name="_next" value="https://shukurutrades.com/thank-you.html">
-
-      <button type="submit" 
-              style="padding: 12px 24px; background-color: #28a745; color: white; border: none; border-radius: 5px;">
-        ✅ Upload & Send
-      </button>
+    <!-- PayPal Donate Button -->
+    <form action="https://www.paypal.com/donate" method="post" target="_blank">
+      <input type="hidden" name="business" value="info.crosbyventures@gmail.com" />
+      <input type="hidden" name="currency_code" value="USD" />
+      <input type="submit" value="Donate via PayPal" class="button" />
     </form>
+
+    <div class="divider"></div>
+
+    <div class="payment-info">
+      <p><strong>CashApp:</strong> $crosbyventuresllc</p>
+      <img src="https://chart.googleapis.com/chart?chs=150x150&cht=qr&chl=https://cash.app/$crosbyventuresllc" class="qr-img" alt="CashApp QR Code">
+
+      <p><strong>Zelle:</strong> +1 (480) 912-9138</p>
+    </div>
+
+    <div class="divider"></div>
+
+    <!-- Buy Book + Mentorship Button -->
+    <h3>Buy Full Mentorship + Sniper Book</h3>
+    <p>Get lifetime access, strategy book & Zoom support</p>
+    <a href="https://www.paypal.com/paypalme/crosbyventuresllc/1500" target="_blank" class="button">Buy Now – $1,500</a>
+
+    <p class="note">*Crosby Ventures LLC is a for-profit business. Donations are not tax-deductible but support our mentorship, operations, and community initiatives.</p>
   </div>
-</div>
 
 </body>
 </html>
