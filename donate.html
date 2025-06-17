@@ -71,3 +71,52 @@
 
 </body>
 </html>
+<!-- 👇 Start: Fillable Donation Form Section -->
+<section style="padding: 40px 20px; background: #f9f9f9;">
+  <h2 style="text-align: center; color: #333;">📝 Fill Out the Donation Form</h2>
+  <p style="text-align: center; max-width: 700px; margin: 10px auto 30px;">
+    Complete the fillable form below and upload it to support Crosby Ventures. You may also download and return it via email.
+  </p>
+
+  <div style="display: flex; justify-content: center;">
+    <iframe 
+      src="https://shukurutrades.com/assets/Crosby_Donation_Form.pdf"
+      width="100%" 
+      height="700px" 
+      style="border: 1px solid #ccc; max-width: 860px;">
+    </iframe>
+  </div>
+
+  <div style="text-align: center; margin-top: 30px;">
+    <p>🔽 Prefer to download and fill later?</p>
+    <a href="https://shukurutrades.com/assets/Crosby_Donation_Form.pdf" download>
+      <button style="padding: 10px 20px; background-color: #007BFF; color: white; border: none; border-radius: 5px;">
+        Download Donation Form (PDF)
+      </button>
+    </a>
+  </div>
+
+  <div style="text-align: center; margin-top: 40px;">
+    <h3>📤 Submit Your Completed Form</h3>
+    <p>Email: <strong>info.crosbyventures@gmail.com</strong> or upload below:</p>
+
+    <form 
+      action="https://formsubmit.co/info.crosbyventures@gmail.com" 
+      method="POST" 
+      enctype="multipart/form-data"
+      style="margin-top: 20px;">
+      
+      <input type="file" name="attachment" required accept="application/pdf"
+             style="padding: 10px; margin-bottom: 15px;">
+      <br>
+      <input type="hidden" name="_subject" value="New Donation Form Submission">
+      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_next" value="https://shukurutrades.com/thank-you.html">
+      <button type="submit" 
+              style="padding: 10px 25px; background-color: #28a745; color: white; border: none; border-radius: 5px;">
+        Upload & Send
+      </button>
+    </form>
+  </div>
+</section>
+<!-- ☝️ End: Fillable Donation Form Section -->
