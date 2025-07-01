@@ -94,19 +94,43 @@
   }
 }
 
-  </style>
+.mobile-nav {
+  display: flex;
+  overflow-x: auto;
+  gap: 15px;
+  padding: 10px;
+  background: #000;
+  white-space: nowrap;
+  -webkit-overflow-scrolling: touch;
+  scroll-behavior: smooth;
+}
+
+.mobile-nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 8px 14px;
+  font-size: 16px;
+  display: inline-block;
+}
+
+.mobile-nav::-webkit-scrollbar {
+  display: none;
+}
+</style>
 </head>
 <body>
 
-  <header>
-    <nav class="main-nav">
+<header>
+  <nav class="mobile-nav">
+    <a href="#home">Home</a>
+    <a href="#services">Services</a>
+    <a href="#contact">Contact</a>
+    <a href="donate.html">Donate</a>
+    <a href="testimonials.html">Testimonials</a>
+  </nav>
+</header>
 
-  <a href="#home">Home</a>
-  <a href="#services">Services</a>
-  <a href="#contact">Contact</a>
-  <a href="donate.html">Donate</a>
-  <a href="testimonials.html">Testimonials</a>
-</nav>
 
       <!-- ======= Testimonials Section ======= -->
 <section id="testimonials" style="background:#f0f4f8;padding:60px 20px;text-align:center;">
