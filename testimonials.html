@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Student Testimonials - Shukuru Trades</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; padding: 0; background-color: #f4f4f4; color: #333; }
+    .container { max-width: 800px; margin: 50px auto; padding: 20px; background: #fff; border-radius: 8px; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
+    h1 { text-align: center; color: #222; }
+    .testimonial { border-bottom: 1px solid #ddd; padding: 20px 0; overflow: auto; }
+    .testimonial:last-child { border-bottom: none; }
+    .avatar { float: left; margin-right: 20px; border-radius: 50%; width: 80px; height: 80px; object-fit: cover; }
+    .name { font-size: 18px; font-weight: bold; }
+    .location { font-size: 14px; color: #666; }
+    .stars { color: #FFD700; }
+    .message { margin-top: 10px; font-size: 16px; line-height: 1.5; }
+    form { margin-top: 40px; }
+    label { display: block; margin: 10px 0 5px; }
+    input, textarea { width: 100%; padding: 10px; margin-bottom: 15px; border: 1px solid #ccc; border-radius: 4px; }
+    button { background: #28a745; color: white; border: none; padding: 10px 20px; cursor: pointer; border-radius: 4px; }
+    button:hover { background: #218838; }
+    .back-home { text-align: center; margin-top: 30px; }
+    .back-home a { text-decoration: none; background: #007bff; color: white; padding: 12px 25px; border-radius: 5px; display: inline-block; }
+  </style>
+</head>
+<body>
+<div class="container">
+  <h1>🌟 What Students Are Saying</h1>
+
+  <!-- ✅ Real Student Testimonial -->
+  <div class="testimonial">
+    <img src="shukuru.JPG" alt="Shukuru Rutumirwa" class="avatar">
+    <div class="name">Shukuru Rutumirwa</div>
+    <div class="location">🌍 Cedar Rapids, Iowa</div>
+    <div class="stars">★★★★★</div>
+    <div class="message">
+      “Before this course, I didn’t know how to enter a single trade. Now I enter sniper zones with confidence, control my emotions, and actually make profit daily. Thank you Crosby Ventures for changing my life!”
+    </div>
+  </div>
+
+  <!-- ✅ Testimonial Submission Form -->
+  <h2>Submit Your Testimonial</h2>
+  <form action="https://formspree.io/f/moqgqzkw" method="POST">
+    <label for="name">Full Name</label>
+    <input type="text" name="name" required>
+
+    <label for="location">City, State</label>
+    <input type="text" name="location" required>
+
+    <label for="rating">Star Rating (1–5)</label>
+    <input type="number" name="rating" min="1" max="5" required>
+
+    <label for="testimonial">Your Testimonial</label>
+    <textarea name="testimonial" rows="5" required></textarea>
+
+    <label for="photo">Photo URL (optional)</label>
+    <input type="url" name="photo">
+
+    <button type="submit">Send Testimonial</button>
+  </form>
+
+  <!-- ✅ Back to Home Button -->
+  <div class="back-home">
+    <a href="index.html">⬅ Back to Home</a>
+  </div>
+</div>
+</body>
+</html>
