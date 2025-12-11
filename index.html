@@ -2,256 +2,375 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Shukuru Trades</title>
-  <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-EYR2N6ZT5B"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-32CXDJV64Z');
-</script>
+  <title>Crosby Ventures LLC – Digital Skills & Technology Consulting</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Crosby Ventures LLC provides digital skills training, entrepreneurship education, online business development guidance, and technology consulting in Arizona.">
   <style>
-    .main-nav {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  background: #000;
-  padding: 10px;
-  gap: 10px;
-}
+    :root {
+      --bg: #f5f5f7;
+      --bg-alt: #ffffff;
+      --primary: #1b4b8f;
+      --primary-soft: #e2ecf8;
+      --text: #111827;
+      --muted: #6b7280;
+      --border: #e5e7eb;
+    }
 
-.main-nav a {
-  color: white;
-  text-decoration: none;
-  font-weight: bold;
-  padding: 8px 12px;
-  border-radius: 4px;
-  flex-shrink: 0;
-  display: inline-block;
-  font-size: 15px;
-}
+    * { box-sizing: border-box; margin: 0; padding: 0; }
 
-    body { margin: 0; font-family: Arial, sans-serif; background: #f4f4f4; color: #222; }
-    header { background: #000; padding: 20px; display: flex; justify-content: center; }
-    nav a {
-  color: white;
-  text-decoration: none;
-  font-weight: bold;
-  font-size: 15px;
-  padding: 8px 12px;
-  border-radius: 4px;
-  flex-shrink: 0;
-  display: inline-block;
-}
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
 
-    .hero { background: #007bff; color: white; padding: 60px 20px; text-align: center; }
-    section { padding: 40px 20px; text-align: center; }
-    .services h3, .contact h3 { margin-bottom: 20px; }
-    .service-box { background: white; padding: 20px; margin: 15px auto; max-width: 400px; border-radius: 10px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
-    .product { background: #fff; padding: 40px 20px; }
-    .book-img { max-width: 300px; width: 90%; height: auto; border-radius: 10px; cursor: pointer; }
-    .buy-btn { margin-top: 20px; background: #f7931a; color: white; padding: 15px 30px; border: none; font-size: 18px; border-radius: 5px; cursor: pointer; text-decoration: none; display: inline-block; }
-    .description { margin-top: 20px; font-size: 18px; max-width: 600px; margin: auto; }
-    footer { background: #222; color: #fff; text-align: center; padding: 20px; margin-top: 40px; }
-    @media (max-width: 600px) {
-  nav {
-  display: flex;
-  flex-wrap: nowrap;
-  justify-content: center;
-  background: #000;
-  overflow-x: auto;
-  white-space: nowrap;
-  padding: 10px;
-  -webkit-overflow-scrolling: touch;
-  scroll-behavior: smooth;
-}
+    a { color: inherit; text-decoration: none; }
 
+    header {
+      position: sticky; top: 0; z-index: 10;
+      background: rgba(245, 245, 247, 0.96);
+      backdrop-filter: blur(10px);
+      border-bottom: 1px solid var(--border);
+    }
 
-  nav a {
-    display: block;
-    margin: 10px 0;
-    font-size: 16px;
-  }
-  .main-nav {
-    overflow-x: auto;
-    white-space: nowrap;
-    -webkit-overflow-scrolling: touch;
-    scroll-behavior: smooth;
-  }
+    .nav {
+      max-width: 1100px; margin: 0 auto;
+      padding: 0.75rem 1rem;
+      display: flex; align-items: center; justify-content: space-between;
+    }
 
-  .service-box, .product, .testimonial-box {
-    width: 95%;
-    margin-left: auto;
-    margin-right: auto;
-  }
+    .logo {
+      font-weight: 700; font-size: 0.9rem;
+      text-transform: uppercase; letter-spacing: 0.04em;
+    }
 
-  .book-img {
-    max-width: 100%;
-  }
+    .logo span { color: var(--primary); }
 
-  .buy-btn {
-    font-size: 16px;
-    width: 100%;
-    max-width: 300px;
-  }
+    .nav-links { display: flex; gap: 1.25rem; font-size: 0.9rem; }
+    .nav-links a { color: var(--muted); }
+    .nav-links a:hover { color: var(--primary); }
 
-  h1, h2, h3 {
-    font-size: 1.4em;
-  }
-}
+    .btn-nav {
+      padding: 0.45rem 0.9rem; border-radius: 999px;
+      border: 1px solid var(--primary); color: var(--primary);
+      background: #ffffff; font-size: 0.85rem;
+    }
+    .btn-nav:hover { background: var(--primary-soft); }
 
-.mobile-nav {
-  display: flex;
-  overflow-x: auto;
-  gap: 15px;
-  padding: 10px;
-  background: #000;
-  white-space: nowrap;
-  -webkit-overflow-scrolling: touch;
-  scroll-behavior: smooth;
-}
+    main { max-width: 1100px; margin: 0 auto; padding: 1.5rem 1rem 3rem; }
+    section { margin: 3rem 0; }
 
-.mobile-nav a {
-  color: white;
-  text-decoration: none;
-  font-weight: bold;
-  padding: 8px 14px;
-  font-size: 16px;
-  display: inline-block;
-}
+    /* Hero */
+    .hero {
+      display: grid;
+      grid-template-columns: minmax(0, 2fr) minmax(0, 1.3fr);
+      gap: 2rem; align-items: center;
+    }
 
-.mobile-nav::-webkit-scrollbar {
-  display: none;
-}
-</style>
-  
+    .hero-tag {
+      font-size: 0.8rem; font-weight: 600;
+      text-transform: uppercase; letter-spacing: 0.16em;
+      color: var(--primary); margin-bottom: 0.75rem;
+    }
+
+    .hero h1 {
+      font-size: 2.3rem; line-height: 1.15;
+      margin-bottom: 1rem;
+    }
+
+    .hero p { color: var(--muted); margin-bottom: 1.5rem; }
+
+    .hero-actions { display: flex; gap: 0.75rem; flex-wrap: wrap; }
+
+    .btn-primary {
+      padding: 0.75rem 1.4rem; border-radius: 999px;
+      background: var(--primary); color: #ffffff;
+      font-weight: 600; border: none; cursor: pointer;
+    }
+    .btn-primary:hover { opacity: 0.95; }
+
+    .btn-ghost {
+      padding: 0.7rem 1.2rem; border-radius: 999px;
+      border: 1px solid var(--border); background: #ffffff;
+      color: var(--muted); font-size: 0.9rem;
+    }
+
+    /* Hero Card */
+    .hero-card {
+      background: var(--bg-alt); padding: 1.5rem;
+      border-radius: 1rem; border: 1px solid var(--border);
+      box-shadow: 0 18px 40px rgba(15, 23, 42, 0.08);
+    }
+
+    .hero-pill {
+      display: inline-flex; align-items: center; gap: 0.4rem;
+      padding: 0.2rem 0.6rem; border-radius: 999px;
+      background: var(--primary-soft); color: var(--primary);
+      font-size: 0.75rem; margin-bottom: 0.75rem;
+    }
+
+    ul.hero-list { list-style: none; }
+    .hero-list li { margin-bottom: 0.5rem; color: var(--muted); }
+
+    h2.section-title { font-size: 1.4rem; margin-bottom: 0.75rem; }
+    .section-intro { color: var(--muted); max-width: 640px; }
+
+    .grid-2 {
+      display: grid; grid-template-columns: repeat(2, 1fr);
+      gap: 1.5rem;
+    }
+
+    .card {
+      background: var(--bg-alt); border-radius: 1rem;
+      border: 1px solid var(--border); padding: 1.3rem;
+    }
+
+    .badge {
+      display: inline-block; font-size: 0.7rem;
+      background: var(--primary-soft); color: var(--primary);
+      padding: 0.15rem 0.55rem; border-radius: 999px;
+      margin-bottom: 0.5rem;
+    }
+
+    ul.list { margin-top: 0.5rem; padding-left: 1.1rem; color: var(--muted); }
+
+    /* Testimonials */
+    .testimonials {
+      display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.5rem;
+    }
+
+    footer {
+      text-align: center; padding: 1rem;
+      color: var(--muted); background: #f9fafb;
+    }
+
+    @media(max-width: 800px) {
+      .hero { grid-template-columns: 1fr; }
+      .grid-2 { grid-template-columns: 1fr; }
+      .nav-links { display: none; }
+    }
+  </style>
 </head>
+
 <body>
 
 <header>
-  <nav class="mobile-nav">
-    <a href="#home">Home</a>
-    <a href="#services">Services</a>
-    <a href="#contact">Contact</a>
-    <a href="donate.html">Donate</a>
-    <a href="testimonials.html">Testimonials</a>
-    <a href="affiliate.html">Affiliate</a>
-  </nav>
+  <div class="nav">
+    <div class="logo"><span>Crosby</span> Ventures LLC</div>
+    <nav class="nav-links">
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#programs">Programs</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a href="#contact" class="btn-nav">Book a Call</a>
+  </div>
 </header>
 
+<main>
 
-      <!-- ======= Testimonials Section ======= -->
-<section id="testimonials" style="background:#f0f4f8;padding:60px 20px;text-align:center;">
-  <h2 style="font-size:2em;margin-bottom:40px;">What Our Students Say</h2>
-  <div style="max-width:1200px;margin:auto;display:flex;flex-wrap:wrap;gap:20px;justify-content:center;">
+<!-- Hero -->
+<section class="hero">
+  <div>
+    <div class="hero-tag">Arizona • Digital Education & Consulting</div>
+    <h1>Empowering people with digital skills for the modern world.</h1>
+    <p>
+      Crosby Ventures LLC helps individuals and small businesses develop strong
+      digital skills, understand technology tools, and build simple online
+      business systems through clear and practical education.
+    </p>
 
-    <div style="background:#fff;padding:25px;border-radius:10px;box-shadow:0 4px 12px rgba(0,0,0,0.1);width:300px;">
-      <p style="font-style:italic;">“Crypto Sniper Academy changed my life. I went from confused to confident in just 2 weeks!”</p>
-      <p><strong>- Alex M.</strong></p>
+    <div class="hero-actions">
+      <a href="#contact"><button class="btn-primary">Work with Crosby Ventures</button></a>
+      <a href="#services"><button class="btn-ghost">View services</button></a>
+    </div>
+  </div>
+
+  <aside class="hero-card">
+    <div class="hero-pill">Education • Technology • Digital Skills</div>
+    <h3>What we offer</h3>
+    <p>
+      We provide step-by-step guidance to help clients understand digital tools,
+      online platforms, and modern technology workflows.
+    </p>
+    <ul class="hero-list">
+      <li>• Digital skills training</li>
+      <li>• Online business education</li>
+      <li>• Technology & strategy consulting</li>
+    </ul>
+  </aside>
+</section>
+
+<!-- About -->
+<section id="about">
+  <h2 class="section-title">About Crosby Ventures LLC</h2>
+  <p class="section-intro">
+    Based in Phoenix, Arizona, Crosby Ventures LLC supports individuals,
+    entrepreneurs, and small businesses who want to develop their digital
+    potential. Our teaching style is simple, practical, and designed for real
+    results.
+  </p>
+
+  <div class="grid-2">
+    <div class="card">
+      <span class="badge">Our Approach</span>
+      <h3>Clear, practical education</h3>
+      <p>
+        We use step-by-step explanations, real-world examples, and hands-on
+        learning to make technology easy and accessible.
+      </p>
+      <ul class="list">
+        <li>Simple and beginner-friendly</li>
+        <li>Practical tools you can apply immediately</li>
+        <li>Respectful, patient teaching style</li>
+      </ul>
     </div>
 
-    <div style="background:#fff;padding:25px;border-radius:10px;box-shadow:0 4px 12px rgba(0,0,0,0.1);width:300px;">
-      <p style="font-style:italic;">“Crosby’s sniper entries are 🔥. I now earn daily with clarity and confidence!”</p>
-      <p><strong>- Brenda K.</strong></p>
+    <div class="card">
+      <span class="badge">Community Focus</span>
+      <h3>Supporting growth and opportunity</h3>
+      <p>
+        We help clients gain confidence in using digital tools, building
+        projects, and navigating modern online systems.
+      </p>
+      <ul class="list">
+        <li>New entrepreneurs</li>
+        <li>Students & young adults</li>
+        <li>Small business owners</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- Services -->
+<section id="services">
+  <h2 class="section-title">Services</h2>
+  <p class="section-intro">
+    Crosby Ventures LLC provides education and consulting in digital skills,
+    online business development, and technology guidance. We do not offer any
+    investment, financial, or legal services.
+  </p>
+
+  <div class="grid-2">
+
+    <div class="card">
+      <span class="badge">Digital Skills</span>
+      <h3>Digital skills training</h3>
+      <p>Learn essential modern tools for work, business, and communication.</p>
+      <ul class="list">
+        <li>Using online platforms</li>
+        <li>Email & communication tools</li>
+        <li>Organizing digital workflows</li>
+      </ul>
     </div>
 
-    <div style="background:#fff;padding:25px;border-radius:10px;box-shadow:0 4px 12px rgba(0,0,0,0.1);width:300px;">
-      <p style="font-style:italic;">“Shukuru Trades made crypto simple. Highly recommend to all beginners!”</p>
-      <p><strong>- Daniel T.</strong></p>
+    <div class="card">
+      <span class="badge">Online Business</span>
+      <h3>Online business education</h3>
+      <p>Step-by-step guidance to build simple online income systems.</p>
+      <ul class="list">
+        <li>Creating digital products</li>
+        <li>Building an online presence</li>
+        <li>Understanding online marketplaces</li>
+      </ul>
     </div>
 
-    <div style="background:#fff;padding:25px;border-radius:10px;box-shadow:0 4px 12px rgba(0,0,0,0.1);width:300px;">
-      <p style="font-style:italic;">“Every module is gold. I’ve already shared this course with my whole crew.”</p>
-      <p><strong>- Miriam N.</strong></p>
+    <div class="card">
+      <span class="badge">Consulting</span>
+      <h3>Technology & project consulting</h3>
+      <p>Support for digital projects and business setup.</p>
+      <ul class="list">
+        <li>Website setup basics</li>
+        <li>Simple automation tools</li>
+        <li>Project planning & strategy</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <span class="badge">Delivery</span>
+      <h3>How sessions work</h3>
+      <p>Training delivered in-person or online depending on availability.</p>
+      <ul class="list">
+        <li>One-on-one coaching</li>
+        <li>Workshops & group sessions</li>
+        <li>Downloadable learning materials</li>
+      </ul>
     </div>
 
   </div>
 </section>
-<!-- ======= End Testimonials Section ======= -->
 
-    </nav>
-  </header>
+<!-- Programs -->
+<section id="programs">
+  <h2 class="section-title">Programs & Resources</h2>
+  <p class="section-intro">Learning programs designed for beginners and small business owners.</p>
 
-  <section class="hero" id="home">
-    <h1>Welcome to Shukuru Trades</h1>
-    <p>Trading insights. Digital skills. Real results.</p>
-    <p><strong>Join Our Community</strong></p>
-  </section>
-
-  <section style="background: #000; color: white; padding: 50px 20px;">
-    <h2>🚀 Explore More from Shukuru Trades</h2>
-    <p>Level up your crypto journey with our premium tools, mentorship, and merch.</p>
-    <div style="margin-top: 30px;">
-      <a href="store.html" class="buy-btn" style="background: #00cc99;">🛒 Visit Store</a>
-      <a href="mentorship.html" class="buy-btn" style="background: #0066ff;">📘 1-on-1 Mentorship</a>
-      <a href="https://t.me/shukurutrades" target="_blank" class="buy-btn" style="background: #8a3ab9;">📢 Free Signals</a>
+  <div class="grid-2">
+    <div class="card">
+      <span class="badge">Workshops</span>
+      <h3>Digital skills workshops</h3>
+      <p>Live sessions teaching essential tools and platforms.</p>
+      <ul class="list">
+        <li>Using web apps & cloud tools</li>
+        <li>Productivity systems</li>
+        <li>Intro to web presence</li>
+      </ul>
     </div>
-    <div style="background:#fff; display:inline-block; padding:10px 20px; border-radius:8px; margin-top:30px;">
-  <img src="images/shukuru-trades-logo.png" alt="Shukuru Trades Logo" style="max-width:180px; width:100%; height:auto;">
-</div>
 
+    <div class="card">
+      <span class="badge">Guides</span>
+      <h3>Digital guides</h3>
+      <p>PDF resources with step-by-step instructions.</p>
+      <ul class="list">
+        <li>Tool setup checklists</li>
+        <li>Project planning templates</li>
+        <li>Beginner tech guides</li>
+      </ul>
+    </div>
+  </div>
+</section>
 
-  </section>
+<!-- Testimonials -->
+<section id="testimonials">
+  <h2 class="section-title">What clients say</h2>
+  <div class="testimonials">
+    <div class="card">
+      <p>“The digital training helped me start my online project with confidence.”</p>
+      <p class="quote-author">— Client, Phoenix AZ</p>
+    </div>
+    <div class="card">
+      <p>“Crosby Ventures made technology simple and easy to follow.”</p>
+      <p class="quote-author">— Small Business Owner</p>
+    </div>
+  </div>
+</section>
 
-  <section class="services" id="services">
-    <h3>Our Services</h3>
+<!-- Contact -->
+<section id="contact">
+  <h2 class="section-title">Contact Crosby Ventures LLC</h2>
+  <p class="section-intro">For consulting, workshops, or partnership inquiries:</p>
 
-    <a href="mentorship.html" style="text-decoration: none; color: inherit;">
-      <div class="service-box">
-        <img src="crypto_mentorship.png" alt="Crypto Mentorship" style="width:100%; border-radius: 10px; margin-bottom: 15px;">
-        <h4>Crypto Mentorship</h4>
-        <p>Learn how to trade like a sniper with tailored lessons and 1-on-1 coaching.</p>
-      </div>
-    </a>
-
-    <a href="https://t.me/+tZbbzw6Zvro1Zjgx" target="_blank" style="text-decoration: none; color: inherit;">
-      <div class="service-box">
-        <img src="market_signals.png" alt="Market Signals" style="width:100%; border-radius: 10px; margin-bottom: 15px;">
-        <h4>Signal Alerts</h4>
-        <p>Get real-time crypto trading signals directly to your device with entry/exit targets.</p>
-      </div>
-    </a>
-
-    <a href="crypto-tools.html" style="text-decoration: none; color: inherit;">
-      <div class="service-box">
-        <img src="sniper_tools.png" alt="Crypto Tools" style="width:100%; border-radius: 10px; margin-bottom: 15px;">
-        <h4>Crypto Tools</h4>
-        <p>Access tools like trade journals, profit calculators, and sniper watchlists.</p>
-      </div>
-    </a>
-  </section>
-
-  <section class="product" id="product">
-    <h2>📘 Featured Product</h2>
-    <a href="https://crosbyventures.gumroad.com/l/tplkub" target="_blank">
-      <img src="crypto_sniper_book_cover.jpg" alt="Crypto Sniper Academy Book" class="book-img">
-    </a>
-    <p class="description">
-      <strong>Crypto Sniper Academy</strong><br>
-      Master the markets with this all-in-one crypto trading playbook.<br>
-      <strong>Price: $1500</strong>
+  <div class="card" style="max-width:500px;">
+    <p><strong>Email:</strong> info.crosbyventures@gmail.com</p>
+    <p><strong>Phone:</strong> 623-219-1735</p>
+    <p><strong>Location:</strong> Phoenix, Arizona</p>
+    <p style="font-size:0.85rem; color:var(--muted); margin-top:1rem;">
+      Crosby Ventures LLC provides digital education and technology consulting.
+      We do not offer financial, investment, or legal services.
     </p>
-    <a class="buy-btn" href="https://crosbyventures.gumroad.com/l/tplkub" target="_blank">
-      🔥 Buy Now for $1500 – Instant Download
-    </a>
-    <p style="margin-top: 10px; color: #666;">Secure checkout powered by Gumroad</p>
-  </section>
+  </div>
+</section>
 
-  <section class="contact" id="contact">
-    <h3>Contact</h3>
-    <p>Have questions or want to connect directly?</p>
-    <p>
-      📱 <a href="https://wa.me/16232191735" target="_blank">WhatsApp Me</a><br>
-      📢 <a href="https://t.me/shukurutrades" target="_blank">Join Telegram</a>
-    </p>
-  </section>
+</main>
 
-  <footer>
-    <p>&copy; 2025 Shukuru Trades. All rights reserved.</p>
-    <a href="privacy.html" style="color: #00ffff;">Privacy Policy</a> |
-  <a href="terms.html" style="color: #00ffff;">Terms & Conditions</a>
-  </footer>
+<footer>
+  © <span id="year"></span> Crosby Ventures LLC. All rights reserved.
+</footer>
+
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+
 </body>
 </html>
